@@ -8,7 +8,7 @@ const Tasks = () => {
 
     return (
         <div className="task-list">
-            <Button type="submit" variant="contained" color={showAddTask ? 'secondary' : 'primary'} onClick={showTask} >
+            <Button type="button" role="button" variant="contained" color={showAddTask ? 'secondary' : 'primary'} onClick={showTask} >
             {showAddTask ? 'Close' : 'Add'}
             </Button>
             {showAddTask &&

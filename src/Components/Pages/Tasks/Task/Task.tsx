@@ -1,6 +1,6 @@
 import { FaTimes } from 'react-icons/fa'
 import { ITask } from '../../../../Interfaces/ITask'
-import DateHelper from '../../../../Helpers/DateHelper'
+import { formatDateYMD } from '../../../../Helpers/DateHelper'
 
 interface TaskProps {
     task: ITask,
@@ -9,7 +9,6 @@ interface TaskProps {
 }
 
 const Task = ({task, onToggle, onDelete}: TaskProps) => {
-    const {formatDateYMD} = DateHelper()
 
     return (
         <div className={`task ${task.reminder ? 'reminder': ''}`} onDoubleClick={onToggle} >

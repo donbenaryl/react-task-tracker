@@ -18,8 +18,11 @@ The following are what has been done on this so far:
 6. **src/Interfaces** : where all interfaces(for TypeScript) are located.
 7. **src/Routes** : where all components for each PAGES are located.
 8. **src/States** : supposedly, where all STATES will be located. Will need to check more on which place should it be placed best. This will change.
-9. **src/Validations**: where all VALIDATIONS will be located (Not yet used for now).
-10. **src/App.tsx **: Main App file where all routes are listed
+9. **src/Validations** : where all VALIDATIONS will be located (Not yet used for now).
+10. **src/App.tsx** : Main App file where all routes are listed
+
+# What's next?
+Will still continue on updating as I read more on the best practices in React. Adding more features and maybe even making it a REAL usable app in the future.
 
 # Development
 npm start

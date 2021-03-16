@@ -1,6 +1,6 @@
 export interface ITask {
     id: number,
     title: string,
-    date: string,
+    date: Date | null,
     reminder: boolean
 }

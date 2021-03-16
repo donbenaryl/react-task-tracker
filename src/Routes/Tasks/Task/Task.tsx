@@ -1,5 +1,6 @@
-import { FaTimes } from 'react-icons/fa';
+import { FaTimes } from 'react-icons/fa'
 import { ITask } from '../../../Interfaces/ITask'
+import { format } from 'date-fns'
 
 interface TaskProps {
     task: ITask,
@@ -14,7 +15,7 @@ const Task = ({task, onToggle, onDelete}: TaskProps) => {
                 {task.title} 
                 <FaTimes style={{ color: 'red', cursor: 'pointer' }} onClick={onDelete}  />
             </h3>
-            <p>{task.date}</p>
+            <p>{task.date ? format(new Date(task.date), 'yyyy-MM-dd') : '--'}</p>
         </div>
     )
 }

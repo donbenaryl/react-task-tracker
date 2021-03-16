@@ -1,6 +1,6 @@
 import TasksLogic from './TasksLogic';
-import Task from '../Task/Task';
-import AddTask from '../Task/AddTask';
+import Task from './Task/Task';
+import AddTask from './Task/AddTask';
 import Button from '@material-ui/core/Button';
 
 const Tasks = () => {

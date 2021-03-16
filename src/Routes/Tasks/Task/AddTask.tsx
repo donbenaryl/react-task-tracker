@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ITask } from '../../Interfaces/ITask'
+import { ITask } from '../../../Interfaces/ITask'
 import React from 'react';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';

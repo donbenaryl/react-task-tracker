@@ -5,7 +5,6 @@ import Footer from './Components/Footer';
 import About from './Routes/About/About';
 
 function App() {
-  console.log(process.env)
   return (
     <Router>
       <div className="container">

@@ -12,14 +12,14 @@ The following are what has been done on this so far:
 # File Structure
 1. **.env** : where the base URL for the API is located.
 2. **src/build** : where the production built files are located (npm build).
-3. **src/Components** : where SMALL components which will be usually shared across all pages are located.
-4. **src/Errors** : where all ERRORS will be located (Not yet used for now).
-5. **src/Helpers** : where all Helpers will be located (Not yet used for now).
-6. **src/Interfaces** : where all interfaces(for TypeScript) are located.
-7. **src/Routes** : where all components for each PAGES are located.
-8. **src/States** : supposedly, where all STATES will be located. Will need to check more on which place should it be placed best. This will change.
-9. **src/Validations** : where all VALIDATIONS will be located (Not yet used for now).
-10. **src/App.tsx** : Main App file where all routes are listed
+3. **src/Components** : where all components are located.
+4. **src/Components/Shared** : where commonly shared components are located.
+5. **src/Components/Pages** : where all components for each PAGES are located.
+6. **src/Errors** : where all ERRORS will be located (Not yet used for now).
+7. **src/Helpers** : where all Helpers will be located (Not yet used for now).
+8. **src/Interfaces** : where all interfaces(for TypeScript) are located.
+11. **src/Validations** : where all VALIDATIONS will be located (Not yet used for now).
+12. **src/App.tsx** : Main App file where all routes are listed
 
 # What's next?
 Will still continue on updating as I read more on the best practices in React. Adding more features and maybe even making it a REAL usable app in the future.

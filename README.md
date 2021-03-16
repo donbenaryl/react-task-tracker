@@ -16,7 +16,7 @@ The following are what has been done on this so far:
 4. **src/Components/Shared** : where commonly shared components are located.
 5. **src/Components/Pages** : where all components for each PAGES are located.
 6. **src/Errors** : where all ERRORS will be located (Not yet used for now).
-7. **src/Helpers** : where all Helpers will be located (Not yet used for now).
+7. **src/Helpers** : where all Helpers will be located.
 8. **src/Interfaces** : where all interfaces(for TypeScript) are located.
 11. **src/Validations** : where all VALIDATIONS will be located (Not yet used for now).
 12. **src/App.tsx** : Main App file where all routes are listed

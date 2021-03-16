@@ -24,11 +24,20 @@ The following are what has been done on this so far:
 # What's next?
 Will still continue on updating as I read more on the best practices in React. Adding more features and maybe even making it a REAL usable app in the future.
 
+# Install required packages
+npm install
+
 # Development
 npm start
 
 # Production Build
 npm build
 
+# Running Dummy Back-end
+npm run server
+
 # Note
 Any feedback and suggestions will be greatly appreciated!
+
+# What it currently looks like
+![image](https://user-images.githubusercontent.com/64432607/111302263-68c0da00-8610-11eb-9e8b-7900b5f15249.png)

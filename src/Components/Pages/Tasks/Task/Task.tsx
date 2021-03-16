@@ -1,5 +1,5 @@
 import { FaTimes } from 'react-icons/fa'
-import { ITask } from '../../../Interfaces/ITask'
+import { ITask } from '../../../../Interfaces/ITask'
 import { format } from 'date-fns'
 
 interface TaskProps {

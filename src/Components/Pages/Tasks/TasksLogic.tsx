@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { ITask } from '../../Interfaces/ITask';
+import { ITask } from '../../../Interfaces/ITask';
 
 const TasksLogic = () => {
   const [ tasks, setTasks ] = useState<Array<ITask>>([])

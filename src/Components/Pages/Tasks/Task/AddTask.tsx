@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ITask } from '../../../Interfaces/ITask'
+import { ITask } from '../../../../Interfaces/ITask'
 import React from 'react';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
@@ -51,7 +51,7 @@ const AddTask: React.FC<FuncProps> = ({onAdd}) => {
                 <KeyboardDatePicker
                     format="yyyy-MM-dd"
                     margin="normal"
-                    label="Date picker"
+                    label="Date"
                     id="date-picker-dialog"
                     value={date}
                     onChange={handleDateChange}

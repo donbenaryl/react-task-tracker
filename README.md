@@ -8,6 +8,7 @@ The following are what has been done on this so far:
 3. Delete Reminder
 4. Dummy back-end run in json-server
 5. Routing for SPA experience (Just had 2 pages for now. Task, which is the root page, and About, which is just a simple page to test if the routing works)
+6. A bit of a unit tests
 
 # File Structure
 1. **.env** : where the base URL for the API is located.

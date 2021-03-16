@@ -27,3 +27,5 @@ npm start
 # Production Build
 npm build
 
+# Note
+Any feedback and suggestions will be greatly appreciated!

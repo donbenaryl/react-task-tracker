@@ -36,8 +36,8 @@ npm build
 # Running Dummy Back-end
 npm run server
 
+# What it currently looks like
+![image](https://user-images.githubusercontent.com/64432607/111311012-f275a500-861a-11eb-84cf-b75c584d1be5.png)
+
 # Note
 Any feedback and suggestions will be greatly appreciated!
-
-# What it currently looks like
-![image](https://user-images.githubusercontent.com/64432607/111302263-68c0da00-8610-11eb-9e8b-7900b5f15249.png)

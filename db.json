@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "title": "Initial set-up",
+      "date": "2021-03-15",
+      "reminder": true,
+      "id": 1
+    },
+    {
+      "title": "Login Page",
+      "date": "2021-03-15",
+      "reminder": false,
+      "id": 2
+    },
+    {
+      "title": "Home Page",
+      "date": "2021-03-20",
+      "reminder": true,
+      "id": 3
+    }
+  ]
+}

@@ -8,6 +8,7 @@ The following are what has been done on this so far:
 3. Delete Reminder
 4. Dummy back-end run in json-server
 5. Routing for SPA experience (Just had 2 pages for now. Task, which is the root page, and About, which is just a simple page to test if the routing works)
+6. A bit of a unit tests
 
 # File Structure
 1. **.env** : where the base URL for the API is located.
@@ -35,6 +36,9 @@ npm build
 
 # Running Dummy Back-end
 npm run server
+
+# Running Test
+npm test
 
 # What it currently looks like
 ![image](https://user-images.githubusercontent.com/64432607/111311012-f275a500-861a-11eb-84cf-b75c584d1be5.png)

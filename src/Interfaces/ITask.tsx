@@ -4,3 +4,7 @@ export interface ITask {
     date: Date | null,
     reminder: boolean
 }
+
+export interface ITasksState {
+    tasks: ITask[]
+}

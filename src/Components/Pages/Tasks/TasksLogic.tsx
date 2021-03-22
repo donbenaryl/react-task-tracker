@@ -1,15 +1,21 @@
 import { useState, useEffect } from 'react';
-import { ITask } from '../../../Interfaces/ITask';
+import { ITask, ITasksState } from '../../../Interfaces/ITask';
+import { useSelector, useDispatch } from 'react-redux';
+import { AddTask } from '../../../actions'
+
 
 const TasksLogic = () => {
+  const dispatch = useDispatch()
+  const taskss = useSelector<ITasksState, ITasksState["tasks"]>((state) => state.tasks)
+
   const [ tasks, setTasks ] = useState<Array<ITask>>([])
   const [showAddTask, setShowAddTask] = useState(false)
-
 
   useEffect(() => {
     const getTasks = async () => {
       const tasksFromServer = await fetchTasks()
       setTasks(tasksFromServer)
+      // dispatch({type: "ADD_TASK", payload: tasksFromServer})
     }
     getTasks()
   }, [])
@@ -37,8 +43,8 @@ const TasksLogic = () => {
       body: JSON.stringify(task)
     })
     const data = await res.json()
-
-    setTasks([...tasks, data] )
+    dispatch(AddTask(data))
+    // setTasks([...tasks, data] )
   }
 
   const deleteTask = async (id: number) : Promise<void> => {
@@ -73,7 +79,7 @@ const TasksLogic = () => {
     setShowAddTask(!showAddTask);
   }
   
-  return {tasks, fetchTasks, deleteTask, toggleReminder, showAddTask, showTask, addTask }
+  return {tasks, taskss, fetchTasks, deleteTask, toggleReminder, showAddTask, showTask, addTask }
 }
 
 export default TasksLogic

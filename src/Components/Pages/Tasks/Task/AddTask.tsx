@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, ChangeEvent } from 'react'
 import { ITask } from '../../../../Interfaces/ITask'
 import React from 'react';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
@@ -20,7 +20,11 @@ const AddTask: React.FC<FuncProps> = ({onAdd}) => {
     const [date, setDate] = useState<Date | null>(new Date());
     const [reminder, setReminder] = useState<boolean>(false)
 
-    const handleDateChange = (date: Date | null) => {
+    const updateTitle = (event: ChangeEvent<HTMLInputElement>) => {
+        setTitle(event.target.value);
+    }
+
+    const updateDate = (date: Date | null) => {
         setDate(date);
       };
 
@@ -45,7 +49,7 @@ const AddTask: React.FC<FuncProps> = ({onAdd}) => {
                 type="text"
                 value={title}
                 fullWidth
-                onChange={(e) => setTitle(e.target.value)}
+                onChange={updateTitle}
                 />
             <MuiPickersUtilsProvider utils={DateFnsUtils}>
                 <KeyboardDatePicker
@@ -54,7 +58,7 @@ const AddTask: React.FC<FuncProps> = ({onAdd}) => {
                     label="Date"
                     id="date-picker-dialog"
                     value={date}
-                    onChange={handleDateChange}
+                    onChange={updateDate}
                     KeyboardButtonProps={{
                         'aria-label': 'change date',
                     }}

@@ -4,17 +4,28 @@ import AddTask from './Task/AddTask';
 import Button from '@material-ui/core/Button';
 
 const Tasks = () => {
-    const {tasks, deleteTask, toggleReminder, showAddTask, showTask, addTask} = TasksLogic();
+
+    const {tasks, taskss, deleteTask, toggleReminder, showAddTask, showTask, addTask} = TasksLogic();
 
     return (
         <div className="task-list">
+            {/* <ul>
+                <li>pota</li>
+                {taskss.length > 0 ? 
+                    taskss.map((tesk) => (
+                        <li key={tesk.id}>{tesk.title}</li>
+                        ))
+                    :
+                    <p>No Task</p>
+                }
+            </ul> */}
             <Button type="button" role="button" variant="contained" color={showAddTask ? 'secondary' : 'primary'} onClick={showTask} >
             {showAddTask ? 'Close' : 'Add'}
             </Button>
             {showAddTask &&
                 <AddTask onAdd={addTask} />}
-            {tasks.length > 0 ? 
-                tasks.map((task) => (
+            {taskss.length > 0 ? 
+                taskss.map((task) => (
                     <Task key={task.id} task={task} onToggle={async () => toggleReminder(task.id)} onDelete={async () => deleteTask(task.id)} />
                 ))
             : 
